@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify, send_from_directory, redirect
 import os
 import uuid
-import cors
+from flask_cors import CORS
 
 app = Flask(__name__)
 cors(app)
