@@ -1,8 +1,10 @@
 from flask import Flask, request, jsonify, send_from_directory, redirect
 import os
 import uuid
+import cors
 
 app = Flask(__name__)
+cors(app)
 
 # Folder to save HTML files
 SITES_FOLDER = 'sites'
